@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   const { colorMode } = useColorMode();
-  const footerBg = colorMode === "light" ? "rgba(226, 232, 240, 0.7)" : "rgba(23, 25, 35, 0.7)";
+  const footerBg = colorMode === "light" ? 'whiteAlpha.900' : 'gray.800';
 
   const footerColor = useColorModeValue("black", "white");
   return (
@@ -27,7 +27,6 @@ const Footer = () => {
         maxW="1200px"
         margin="0 auto"
         px={4}
-        style={{ backdropFilter: 'blur(10px)' }}
       >
         <Text>&copy; 2023 Christopher Ackerman</Text>
       </Flex>
