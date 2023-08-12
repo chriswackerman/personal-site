@@ -57,7 +57,7 @@ const Model = () => {
         const loader = new GLTFLoader();
         let model;
 
-        loader.load('/computer.glb', function (gltf) {
+        loader.load(import.meta.env.BASE_URL + '/computer.glb', function (gltf) {
             model = gltf.scene;
             scene.add(model);
             setLoading(false);

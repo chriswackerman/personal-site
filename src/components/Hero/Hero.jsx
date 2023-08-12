@@ -15,6 +15,7 @@ import {
 } from '@chakra-ui/react';
 
 import { FaGithub, FaLinkedin, FaFileAlt, FaEnvelope } from 'react-icons/fa'; 
+import profilePicture from '/me-portfolio-crop.png';
 
 const Hero = ({ onOpen }) => {
   const { colorMode } = useColorMode();
@@ -44,7 +45,7 @@ const Hero = ({ onOpen }) => {
       mb="5"
     >
       <Image
-        src="/me-portfolio-crop.png"
+        src={profilePicture}
         alt="Profile Picture"
         borderRadius="full"
         boxSize="150px"
